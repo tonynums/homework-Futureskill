@@ -1,0 +1,96 @@
+{
+	"id": "544f255a-d853-4834-8c01-1d74a9054bed",
+	"name": "Test",
+	"timestamp": "2024-02-12T11:13:41.582Z",
+	"collection_id": "32673458-db341004-7b91-431d-9596-db7f23a9983d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-02-12T11:13:40.769Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "63d9693b-dd2a-4eea-a0c6-e180a6863d27",
+			"name": "New Request",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body success": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body success": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body success": true
+				}
+			]
+		},
+		{
+			"id": "0b994165-53fc-4c08-8e30-cc780da65c26",
+			"name": "New Request",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 314,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 404 not found": false,
+				"Response time is less than 80ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404 not found": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 80ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				314
+			],
+			"allTests": [
+				{
+					"Status code is 404 not found": false,
+					"Response time is less than 80ms": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 342,
+	"collection": {
+		"requests": [
+			{
+				"id": "63d9693b-dd2a-4eea-a0c6-e180a6863d27",
+				"method": "GET"
+			},
+			{
+				"id": "0b994165-53fc-4c08-8e30-cc780da65c26",
+				"method": "POST"
+			}
+		]
+	}
+}
